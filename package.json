@@ -1,0 +1,21 @@
+{
+  "name": "sudokuduel",
+  "version": "0.2.1",
+  "description": "Multiplayer Sudoku",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node client.js"
+  },
+  "author": {
+    "name": "jiapingzeng"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
