@@ -43,7 +43,7 @@ class Game extends React.Component {
     }
 
     componentDidMount() {
-        const socket = SocketIOClient('http://localhost:3001')
+        const socket = SocketIOClient()
         socket.on('connected', () => {
             this.setState({status: 'Connected to server'})
         })
