@@ -3,7 +3,8 @@
   "version": "0.2.1",
   "description": "Multiplayer Sudoku",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
     "client": "node client.js"
   },
@@ -13,7 +14,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.1",
-    "socket.io": "^2.0.3",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
     "concurrently": "^3.5.0"
   }
 }
